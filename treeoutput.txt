@@ -1,0 +1,36 @@
+n= 15474 
+
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+1) root 15474 7737 alternative (0.500000000 0.500000000)  
+  2) massage>=0.00233808 2812   31 alternative (0.988975818 0.011024182) *
+  3) massage< 0.00233808 12662 4956 conventional (0.391407361 0.608592639)  
+    6) chiropractor>=0.0005630631 839    5 alternative (0.994040524 0.005959476) *
+    7) chiropractor< 0.0005630631 11823 4122 conventional (0.348642477 0.651357523) *
+Confusion Matrix and Statistics
+
+              Reference
+Prediction     alternative conventional
+  alternative          501           27
+  conventional         646         5131
+                                               
+               Accuracy : 0.8933               
+                 95% CI : (0.8854, 0.9008)     
+    No Information Rate : 0.8181               
+    P-Value [Acc > NIR] : < 0.00000000000000022
+                                               
+                  Kappa : 0.5462               
+ Mcnemar's Test P-Value : < 0.00000000000000022
+                                               
+            Sensitivity : 0.43679              
+            Specificity : 0.99477              
+         Pos Pred Value : 0.94886              
+         Neg Pred Value : 0.88818              
+             Prevalence : 0.18192              
+         Detection Rate : 0.07946              
+   Detection Prevalence : 0.08374              
+      Balanced Accuracy : 0.71578              
+                                               
+       'Positive' Class : alternative          
+                                               
